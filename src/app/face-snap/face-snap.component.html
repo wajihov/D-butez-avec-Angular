@@ -8,6 +8,6 @@
   </div>
   <p>
     <button (click)="onAddSnap()"> {{ textButton}} </button>
-    🤌 {{ faceSnap.snap }}
+    <span [ngStyle]="{ color: 'rgb(0, ' + faceSnap.snap + ', 0)' }">🤌 {{ faceSnap.snap }}</span>
   </p>
 </div>
