@@ -1,9 +1,10 @@
-.face-snap-card {
+/*.face-snap-card {
   width: 35%;
   img {
     width: 100%;
   }
-}
+}*/
+
 .face-snap-card {
   box-sizing: border-box;
   width: 50%;
@@ -13,13 +14,16 @@
   img {
     width: 100%;
   }
+
   h2 {
     margin-bottom: 0;
   }
+
   p {
     font-weight: 300;
     font-size: 16px;
   }
+
   button {
     background-color: transparent;
     box-sizing: border-box;
@@ -36,3 +40,17 @@
     }
   }
 }
+
+.snapped {
+  background-color: rgba(lightgreen, 0.4);
+  color: darkgreen;
+  button {
+    box-shadow: lightgreen 3px 3px 7px;
+    color: darkgreen;
+    &:active {
+      box-shadow: lightgreen 0 0 5px;
+    }
+  }
+}
+
+

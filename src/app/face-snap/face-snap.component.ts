@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { FaceSnap } from '../Models/face-snap.Model';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
+import { FaceSnap } from '../Models/face-snap.model';
 
 @Component({
   selector: 'app-face-snap',
@@ -8,7 +8,6 @@ import { FaceSnap } from '../Models/face-snap.Model';
 })
 export class FaceSnapComponent implements OnInit {
   @Input() faceSnap!: FaceSnap;
-
   liked!: boolean;
   textButton!: string;
   ngOnInit(): void {
