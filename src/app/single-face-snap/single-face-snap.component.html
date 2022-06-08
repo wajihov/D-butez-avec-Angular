@@ -1,6 +1,7 @@
 <div class="face-snap-card snapped" [ngClass]=" {snapped: textButton==='Opps onSnaps!'} ">
-  <p>Mis en ligne le {{ faceSnap.description }}</p>
+  <h2>{{ faceSnap.title | titlecase }}</h2>
   <a routerLink="/facesnaps">Back</a>
+  <p>Mis en ligne le {{ faceSnap.description }}</p>
   <img [src]="faceSnap.url" [alt]="faceSnap.title">
   <p>{{ faceSnap.createdDate | date: 'à HH:mm, le d MMMM yyyy' }}</p>
   <div *ngIf=" faceSnap.location">
